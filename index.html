@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .maintenance-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        .maintenance-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: #2d3436;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #636e72;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .status {
+            display: inline-block;
+            background: #00b894;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .maintenance-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Maintenance" class="maintenance-image">
+        <div class="maintenance-icon">🛠️</div>
+        <span class="status">Maintenance in Progress</span>
+        <h1>We'll Be Back Soon!</h1>
+        <p>We're currently performing some maintenance to improve your experience. We apologize for any inconvenience and appreciate your patience. Our team is working hard to get everything back up and running.</p>
+        <p>Thank you for your understanding!</p>
+    </div>
+    <div class="demo-pages">
+        <h1>Demo Pages</h1>
+        <ul style="list-style: none; line-height: 2em; margin-left: 3em;">
+            <li><a style="color: inherit; text-decoration: none;" href="onepageraos.html">One Page AOS</a></li>
+            <li><a style="color: inherit; text-decoration: none;" href="property.html">Multipage</a></li>
+            <li><a style="color: inherit; text-decoration: none;" href="property-one.html">simple One Page</a></li>
+        </ul>
+    </div>
+</body>
+</html>
